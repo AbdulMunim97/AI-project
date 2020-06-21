@@ -1,0 +1,438 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- wally.aiml -->
+
+   
+  <category>
+    <pattern>*</pattern>
+    <template>Excuse me. What?</template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <template>i will give it a try then.</template>
+  </category>
+  
+  <category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>I'm good. </template>
+  </category>
+  
+  <category>
+    <pattern>TELL ME SOMETHING</pattern>
+    <template>about what? </template>
+  </category>
+
+    <category>
+      <pattern>MY NAME IS  *</pattern>
+      <template>
+         HI <star/> I am Wally.
+      </template>
+   </category>
+   
+    <category>
+      <pattern>WHAT IS YOUR NAME</pattern>
+      <template>My name is wally.</template>
+   </category>
+
+    <category>
+      <pattern>I AM *</pattern>
+      <template>
+         Hello <set name = "username"> <star/>! </set>
+      </template>
+   </category>
+
+   <category>
+      <pattern>BYE</pattern>
+      <template>
+         Bye<get name = "username"/> Have a good day!
+      </template>
+   </category>
+
+
+   <category>
+      <pattern>GOOD NIGHT </pattern>
+      <template>
+         Good night<get name = "username"/> Have sweet dreams!
+      </template>
+   </category>
+  <category>
+    <pattern>OK</pattern>
+    <template>yup</template>
+  </category>
+
+  <category>
+    <pattern>WHO ARE YOU</pattern>
+    <template>hi. Me wally. I can recommend you movies according to your genre.</template>
+  </category>
+    <category>
+    <pattern>WHAT CAN YOU OFFER</pattern>
+    <template>Movies according to your genres.</template>
+  </category>
+
+    <category>
+    <pattern>ARE YOU A BOT</pattern>
+    <template> Obviously bro.</template>
+  </category>
+
+
+    <category>
+    <pattern>HEY</pattern>
+    <template>
+        hi. Me wally. I can recommend you movies according to your genre.
+    </template>
+  </category>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+        hi. Me wally. I can recommend you movies according to your genre.
+    </template>
+  </category>
+  <category>
+    <pattern>HI</pattern>
+    <template>
+        hi. Me wally. I can recommend you movies according to your genre.
+    </template>
+  </category>
+
+   <category>
+    <pattern> ONLY MOVIES</pattern>
+    <template>
+        Not just movies. I can also recommend you seasons and tv shows.
+
+    </template>
+  </category>
+  
+   <category>
+    <pattern>WHAT TYPES OF MOVIES </pattern>
+    <template>
+        1.Action
+        2.Comedy
+        3.Drama
+        4.Mystery
+        5.Crime
+    </template>
+  </category>
+  
+  <category>
+    <pattern>BEST ACTION MOVIES </pattern>
+    <template>
+        Top 10 Best action movies of all time:
+        1.Mad Max:Fury Road
+        2.Die Hard
+        3.Terminator
+        4.Terminator 2
+        5.The Matrix
+        6.The Dark Knight
+        7.First Blood
+        8.John Wick
+        9.6 Underground
+        10.Mission Impossible
+
+    </template>
+  </category>
+  
+  <category>
+    <pattern>ACTION MOVIES </pattern>
+    <template>
+        Top 10 Best action movies of all time:
+        1.Mad Max:Fury Road
+        2.Die Hard
+        3.Terminator
+        4.Terminator 2
+        5.The Matrix
+        6.The Dark Knight
+        7.First Blood
+        8.John Wick
+        9.Avengers
+        10.Mission Impossible
+
+    </template>
+  </category>
+  
+  <category>
+    <pattern>ACTION  </pattern>
+    <template>
+        Top 10 Best action movies of all time:
+        1.Mad Max:Fury Road
+        2.Die Hard
+        3.Terminator
+        4.Terminator 2
+        5.The Matrix
+        6.The Dark Knight
+        7.First Blood
+        8.John Wick
+        9.Avengers
+        10.Mission Impossible
+
+    </template>
+  </category>
+  
+   <category>
+    <pattern> BEST COMEDY MOVIES</pattern>
+    <template>
+        Top 10 Best comedy movies of all time:
+        1.Anchorman
+        2.Borat
+        3.Superbad
+        4.Airplane
+        5.The hangover
+        6.Dumb and Dumber
+        7.Ghost Busters
+        8.The 40-year old virgin
+        9.Hot Fuzz
+        10.Modern Times
+
+    </template>
+  </category>
+  
+   <category>
+    <pattern>COMEDY MOVIES</pattern>
+    <template>
+        Top 10 Best comedy movies of all time:
+        1.Anchorman
+        2.Borat
+        3.Superbad
+        4.Airplane
+        5.The hangover
+        6.Dumb and Dumber
+        7.Ghost Busters
+        8.The 40-year old virgin
+        9.Hot Fuzz
+        10.Modern Times
+
+    </template>
+  </category>
+  
+   <category>
+    <pattern>COMEDY </pattern>
+    <template>
+        Top 10 Best comedy movies of all time:
+        1.Anchorman
+        2.Borat
+        3.Superbad
+        4.Airplane
+        5.The hangover
+        6.Dumb and Dumber
+        7.Ghost Busters
+        8.The 40-year old virgin
+        9.Hot Fuzz
+        10.Modern Times
+
+    </template>
+  </category>
+  
+   <category>
+    <pattern> BEST DRAMA MOVIES</pattern>
+    <template>
+        Top 10 Best drama movies of all time:
+        1.Spotlight
+        2.The Godfather
+        3.The Shawshank Redemption
+        4.Casablanca
+        5.Titanic
+        6.A beautiful mind
+        7.Dead poets society
+        8.Forest Gump
+        9.Gravity
+        10.12 angry men
+
+    </template>
+  </category>
+  
+   <category>
+    <pattern>DRAMA MOVIES</pattern>
+    <template>
+        Top 10 Best drama movies of all time:
+        1.Spotlight
+        2.The Godfather
+        3.The Shawshank Redemption
+        4.Casablanca
+        5.Titanic
+        6.A beautiful mind
+        7.Dead poets society
+        8.Forest Gump
+        9.Gravity
+        10.12 angry men
+
+    </template>
+  </category>
+  
+   <category>
+    <pattern>DRAMA</pattern>
+    <template>
+        Top 10 Best drama movies of all time:
+        1.Spotlight
+        2.The Godfather
+        3.The Shawshank Redemption
+        4.Casablanca
+        5.Titanic
+        6.A beautiful mind
+        7.Dead poets society
+        8.Forest Gump
+        9.Gravity
+        10.12 angry men
+
+    </template>
+  </category>
+  
+   <category>
+    <pattern> BEST MYSTERY MOVIES</pattern>
+    <template>
+        Top 10 Best mystery movies of all time:
+        1.Zodiac
+        2.Memento
+        3.Gone girl
+        4.Mystic River
+        5.Shutter island
+        6.The usual suspects
+        7.Murder on the orient express
+        8.Murder Mystery
+        9.Vertigo
+        10.Psycho
+
+    </template>
+  </category>
+  
+  <category>
+    <pattern>MYSTERY MOVIES</pattern>
+    <template>
+        Top 10 Best mystery movies of all time:
+        1.Zodiac
+        2.Memento
+        3.Gone girl
+        4.Mystic River
+        5.Shutter island
+        6.The usual suspects
+        7.Murder on the orient express
+        8.Murder Mystery
+        9.Vertigo
+        10.Psycho
+
+    </template>
+  </category>
+  
+  <category>
+    <pattern>MYSTERY </pattern>
+    <template>
+        Top 10 Best mystery movies of all time:
+        1.Zodiac
+        2.Memento
+        3.Gone girl
+        4.Mystic River
+        5.Shutter island
+        6.The usual suspects
+        7.Murder on the orient express
+        8.Murder Mystery
+        9.Vertigo
+        10.Psycho
+
+    </template>
+  </category>
+  
+    <category>
+    <pattern> BEST CRIME MOVIES</pattern>
+    <template>
+        Top 10 Best crime movies of all time:
+        1.Goodfellas
+        2.Scarface
+        3.The Departed
+        4.Reservoir dogs
+        5.Pulp fiction
+        6.The untouchables
+        7.Seven
+        8.Heat
+        9.Donnie brasco
+        10.Prisoners
+
+    </template>
+  </category>
+  
+  <category>
+    <pattern>CRIME MOVIES</pattern>
+    <template>
+        Top 10 Best crime movies of all time:
+        1.Goodfellas
+        2.Scarface
+        3.The Departed
+        4.Reservoir dogs
+        5.Pulp fiction
+        6.The untouchables
+        7.Seven
+        8.Heat
+        9.Donnie brasco
+        10.Prisoners
+
+    </template>
+  </category>
+  
+  <category>
+    <pattern>CRIME </pattern>
+    <template>
+        Top 10 Best crime movies of all time:
+        1.Goodfellas
+        2.Scarface
+        3.The Departed
+        4.Reservoir dogs
+        5.Pulp fiction
+        6.The untouchables
+        7.Seven
+        8.Heat
+        9.Donnie brasco
+        10.Prisoners
+
+    </template>
+  </category>
+
+  <category>
+    <pattern> OK </pattern>
+    <template><random>
+        <li>Bored? Wanna watch a movie?</li>
+        <li>Bored?</li>
+        <li>I think yo should watch a good movie. </li>
+        </random>
+        </template>
+  </category>
+
+  <category>
+  <pattern> HMM</pattern>
+    <template><random>
+       <li>Bored? Wanna watch a movie?</li>
+        <li>Bored?</li>
+        <li>I think yo should watch a good movie. </li>
+        </random>
+        </template>
+  </category>
+
+  <category>
+  <pattern> OKAY </pattern>
+    <template><random>
+        <li>Bored? Wanna watch a movie?</li>
+        <li>Bored?</li>
+        <li>I think yo should watch a good movie. </li>
+        </random>
+        </template>
+  </category>
+
+  <category>
+  <pattern> I AM TIRED </pattern>
+    <template>
+        i think you should watch a comedy movie.
+        </template>
+  </category>
+  
+    <category>
+      <pattern>I LIKE *</pattern>
+      <template>
+         I too like <star/>.
+      </template>
+   </category>
+
+   <category>
+      <pattern> * I AM *</pattern>
+      <template>
+          hi <star index = "2"/> i am wally.
+      </template>
+   </category>
+
+
+    
+</aiml>
